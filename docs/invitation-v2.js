@@ -85,6 +85,10 @@ phone.addEventListener('touchend', event => {
   if (current === 0) return;
   const dx = event.changedTouches[0].screenX - touchStartX;
   const dy = event.changedTouches[0].screenY - touchStartY;
+  if (current === 1 && dy < -35 && Math.abs(dy) > Math.abs(dx) * 1.1) {
+    showPage(current + 1);
+    return;
+  }
   if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.4) {
     showPage(current + (dx < 0 ? 1 : -1));
   } else if (Math.abs(dy) > 70 && Math.abs(dy) > Math.abs(dx) * 1.3) {
@@ -98,6 +102,11 @@ document.addEventListener('wheel', event => {
   if (current === 0 || Math.abs(event.deltaY) < Math.abs(event.deltaX)) return;
   const page = pages[current];
   const goingForward = event.deltaY > 0;
+  if (current === 1 && goingForward && Date.now() - lastPageChange >= 650) {
+    event.preventDefault();
+    showPage(current + 1);
+    return;
+  }
   const atBoundary = goingForward
     ? page.scrollTop + page.clientHeight >= page.scrollHeight - 3
     : page.scrollTop <= 3;
