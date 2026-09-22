@@ -178,7 +178,7 @@ rsvpForm.addEventListener('submit', event => {
     'Kanishka & Jinit 06.12.2026'
   ].join('\n');
   const subject = `Wedding RSVP - ${fullName}`;
-  const mailto = `mailto:jinitrabari@gmail.com,kanishka.desai4@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const mailto = `mailto:kanishka.desai4@gmail.com,jinitrabari@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   rsvpThanks.hidden = false;
   rsvpForm.hidden = true;
   announce('Your email app is opening with the RSVP');
