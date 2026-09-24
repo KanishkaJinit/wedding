@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500&family=Italianno&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23414c3c'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia' font-size='30' fill='%23f8eee0'%3EK%26J%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./invitation-v2.css?v=order1">
-  <link rel="stylesheet" href="./dress-update.css?v=order1">
+  <link rel="stylesheet" href="./invitation-v2.css?v=arrows1">
+  <link rel="stylesheet" href="./dress-update.css?v=arrows1">
 </head>
 <body>
   <audio id="weddingAudio" src="./wedding-song.mp3?v=2" loop preload="auto" playsinline></audio>
@@ -85,12 +85,12 @@
         <section class="page rsvp-page" id="rsvp-page" aria-label="RSVP" inert><h2>RSVP</h2><span class="heart">♡</span><p class="rsvp-date">Kindly RSVP by<br><strong>29 October 2026</strong></p><form class="rsvp-form" id="rsvpForm"><label>Full name<input name="fullName" type="text" autocomplete="name" required placeholder="Your name"></label><fieldset><legend>Will you be joining us?</legend><label><input name="attendance" type="radio" value="Happily, I’ll be there" required>Happily, I’ll be there</label><label><input name="attendance" type="radio" value="Sadly, I won’t be able to attend">Sadly, I won’t be able to attend</label></fieldset><div class="guest-counts"><label>Adults<input name="adults" type="number" min="0" max="20" value="1" required></label><label>Children<input name="children" type="number" min="0" max="20" value="0" required></label></div><label>Names of everyone attending<textarea name="guestNames" rows="3" required placeholder="Please include adults and children"></textarea></label><label>Children’s ages<textarea name="childrenAges" rows="2" placeholder="Leave blank if no children are attending"></textarea></label><label>Dietary requirements or allergies<textarea name="dietary" rows="3" required placeholder="Write None if there are no requirements"></textarea></label><label>Anything else we should know?<textarea name="extraInfo" rows="2" placeholder="Optional"></textarea></label><label>Leave a little note for the bride & groom<textarea name="note" rows="3" placeholder="Wishes, blessings, advice, or a little love"></textarea></label><button class="solid-button rsvp-button" type="submit">SEND RSVP</button><p class="form-note">Your email app will open with the RSVP ready to send.</p></form><div class="rsvp-thanks" id="rsvpThanks" hidden><h3>RSVP RECEIVED</h3><span class="heart">♡</span><p>Thank you for letting us know!<br>We’re so excited to have you be part of our special day and can’t wait to celebrate together.</p><p>With love,<br>Kanishka & Jinit<br>06.12.2026 ♡</p></div><img class="corner-flower rsvp-leaf left" src="./botanical-branch.png" alt=""><img class="corner-flower rsvp-leaf right" src="./botanical-branch.png" alt=""></section>
 
       </main>
-      <div class="page-controls" id="pageControls" hidden><button id="prevPage" type="button" aria-label="Previous page">↑</button><span id="pageStatus"></span><button id="nextPage" type="button" aria-label="Next page">↓</button></div>
+      <div class="page-controls" id="pageControls" hidden><button id="prevPage" type="button" aria-label="Previous page">‹</button><span id="pageStatus"></span><button id="nextPage" type="button" aria-label="Next page">›</button></div>
     </div>
     <div class="desktop-side"><span>THE INVITATION</span><h2>Good people,<br><i>beautiful places,</i><br>unforgettable moments.</h2><div class="desktop-rule">♡</div><p>KANISHKA & JINIT &nbsp; | &nbsp; 06 · 12 · 2026</p><button type="button" id="shareButton">SHARE INVITATION ↗</button></div>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="./invitation-v2.js?v=order1"></script>
+  <script src="./invitation-v2.js?v=arrows1"></script>
 </body>
 </html>
 
